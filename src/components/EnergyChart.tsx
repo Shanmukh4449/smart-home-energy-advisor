@@ -55,7 +55,7 @@ const EnergyChart = ({ applianceData }: EnergyChartProps) => {
         />
         <Bar
           dataKey="usage"
-          fill={(entry) => entry.color}
+          fill="#0ea5e9"
           radius={[4, 4, 0, 0]}
           barSize={40}
           label={{

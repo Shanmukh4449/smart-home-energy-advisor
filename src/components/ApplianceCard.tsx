@@ -2,7 +2,7 @@
 import { Card } from "@/components/ui/card";
 import { ApplianceData } from "../lib/energyCalculator";
 import { Progress } from "@/components/ui/progress";
-import { Thermometer, Fan, Oven, Refrigerator, Lightbulb } from "lucide-react";
+import { Thermometer, Fan, Refrigerator, Lightbulb, ArrowUp } from "lucide-react";
 
 interface ApplianceCardProps {
   appliance: ApplianceData;
@@ -28,7 +28,7 @@ const ApplianceCard = ({ appliance }: ApplianceCardProps) => {
       case "fan":
         return <Fan className="h-12 w-12" />;
       case "oven":
-        return <Oven className="h-12 w-12" />;
+        return <ArrowUp className="h-12 w-12" />; // Replaced with ArrowUp since Oven is not available
       case "refrigerator":
         return <Refrigerator className="h-12 w-12" />;
       case "light":
